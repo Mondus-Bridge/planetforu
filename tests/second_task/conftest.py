@@ -9,7 +9,7 @@ from selenium.webdriver.chrome.service import Service
 def get_chrome_options():
     options = chrome_options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    options.add_argument('headless')  # Use headless|chrome if you do not need a browser UI
+    options.add_argument('chrome')  # Use headless|chrome if you do not need a browser UI
     options.add_argument('--start-maximized')
     options.add_argument('--window-size=1980,1080')
     return options
